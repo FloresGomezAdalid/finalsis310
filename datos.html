@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<title>Datos del plan agregado de producción</title>
+</head>
+<body>
+	
+	<a href=""><button class="cerrar">Cerrar sesion</button></a>
+<p>Costos unitarios</p>
+	<div class="Contenedor1">
+			<div class="columna1">
+				<p>Mes</p>
+				<p class="texto">Mes 1:</p>
+				<p class="texto">Mes 2:</p>
+				<p class="texto">Mes 3:</p>
+				<p class="texto">Mes 4:</p>
+				<p class="texto">Mes 5:</p>
+				<p class="texto">Mes 6:</p>
+			</div > 
+
+			<div class="columna2">
+					<p>Dias laborales</p>
+				<p><input class="U" id="dias1" type="number" ></p>
+				<p><input class="U" id="dias2" type="number" ></p>
+				<p><input class="U" id="dias3" type="number" ></p>
+				<p><input class="U" id="dias4" type="number" ></p>
+				<p><input class="U" id="dias5" type="number" ></p>
+				<p><input class="U" id="dias6" type="number" ></p>
+	
+			</div>
+			<div class="columna3">
+					<p>Demanda</p>
+				<p><input class="U" id="demanda1" type="number" placeholder="Unidades"></p>
+				<p><input class="U" id="demanda2" type="number" placeholder="Unidades"></p>
+				<p><input class="U" id="demanda3" type="number" placeholder="Unidades"></p>
+				<p><input class="U" id="demanda4" type="number" placeholder="Unidades"></p>
+				<p><input class="U" id="demanda5" type="number" placeholder="Unidades"></p>
+				<p><input class="U" id="demanda6" type="number" placeholder="Unidades"></p>
+	
+			</div>
+			<div class="columna4">
+				<p>Costos unitarios</p>
+				<p class="texto">Producción promedio por operario:</p>
+				<p class="texto">Operarios actuales iniciales:</p>
+				<p class="texto">Costo diario por normal:</p>
+				<p class="texto">Costo por contratar operario:</p>
+				<p class="texto">Costo por despedir operario:</p>
+				<p class="texto">Costo por almacenar:</p>
+				<p class="texto">Costo por retraso:</p>
+				<p class="texto">Inventario inicial:</p>
+				<p class="texto">Horas por jornada de trabajo:</p>
+			</div > 
+			<div class="columna5">
+					<p>Precio</p>
+				<p><input class="U" id="pr1" type="number"></p>
+				<p><input class="U" id="pr2" type="number"></p>
+				<p><input class="U" id="pr3" type="number"></p>
+				<p><input class="U" id="pr4" type="number"></p>
+				<p><input class="U" id="pr5" type="number"></p>
+				<p><input class="U" id="pr6" type="number"></p>
+				<p><input class="U" id="pr7" type="number"></p>
+				<p><input class="U" id="pr8" type="number"></p>
+				<p><input class="U" id="pr9" type="number"></p>
+			</div>
+			<div class="columna6">
+				<p>Unidad</p>
+				<p class="texto">Unidades/trabajador</p>
+				<p class="texto">trabajador(es)</p>
+				<p class="texto">Diario</p>
+				<p class="texto">Empleado</p>
+				<p class="texto">Empleado</p>
+				<p class="texto">Unidad</p>
+				<p class="texto">Unidad</p>
+				<p class="texto">Unidad</p>
+				<p class="texto">Unidad</p>
+			</div>
+	</div>
+	<script type="text/javascript">
+		function  enviardatos(){
+			var dia1=document.getElementById('dia1').value;
+			var dia2=document.getElementById('dia2').value;
+			var dia3=document.getElementById('dia3').value;
+			var dia4=document.getElementById('dia4').value;
+			var dia5=document.getElementById('dia5').value;
+			var dia6=document.getElementById('dia6').value;
+			var demanda1=document.getElementById('demanda1').value;
+			var demanda2=document.getElementById('demanda2').value;
+			var demanda3=document.getElementById('demanda3').value;
+			var demanda4=document.getElementById('demanda4').value;
+			var demanda5=document.getElementById('demanda5').value;
+			var demanda6=document.getElementById('demanda6').value;
+			var pr1=document.getElementById('pr1').value;
+			var pr2=document.getElementById('pr2').value;
+			var pr3=document.getElementById('pr3').value;
+			var pr4=document.getElementById('pr4').value;
+			var pr5=document.getElementById('pr5').value;
+			var pr6=document.getElementById('pr6').value;
+			var url='calculadora.html?dia1='+dia1+'&dia2='+dia2+'&dia3='+dia3+'&dia4='+dia4+'&dia5='+dia5+'&dia6='+dia6+'&demanda1='+demanda2+'&demanda3='+demanda3+'&demanda4='+demanda4+'&demanda5='+demanda5+'&demanda6='+demanda6+'&pr1='+pr1+'&pr2='+pr2+'&pr3='+pr3+'&pr4='+pr4+'&pr5='+pr5+'&pr6='+pr6+'&pr7='+pr7;
+			window.location.href=url;
+		}
+	</script>
+	<a href="calculadora.html" onclick="enviardatos()"><button >Calcular</button></a>
+</body>
+</html>

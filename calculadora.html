@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 <link rel="stylesheet" href="style.css">
+	<title> Plan agregado de producción</title>
+</head>
+<body>
+	
+<script type="text/javascript">
+	window.onload=function(){
+		var urlParams=new URLSearchParams(window.location.search);
+		var D1=parseFloat(urlParams.get('dia1'));
+		var D2=parseFloat(urlParams.get('dia2'));
+		var D3=parseFloat(urlParams.get('dia3'));
+		var D4=parseFloat(urlParams.get('dia4'));
+		var D5=parseFloat(urlParams.get('dia5'));
+		var D6=parseFloat(urlParams.get('dia6'));
+		document.getElementById('D1').value = D1 ;
+	}
+</script>
+
+<p><h1>Calculos del plan </h1></p>
+   <div class="calculadora">
+   	<div class="Col1">
+
+   	<p class="tx1">Mes</p>
+   	<p class="tx2">Dia</p>
+    <p class="tx3">Demanda</p>
+    <p class="tx4">Unidades por operario</p>
+    <p class="tx5">Operarios requeridos</p>
+    <p class="tx6">Operarios disponibles</p>
+    <p class="tx7">Operarios contratados</p>
+    <p class="tx8">Operarios despedidos</p>
+    <p class="tx9">Operarios utilizados</p>
+    <p class="tx10">Unidades producidas</p>
+    <p class="tx11">Unidades disponibles</p>
+    <p class="tx12">Inventario</p>
+    <p class="tx13">Unidades faltantes</p>
+    <p><h3>Costos del plan de producción</h3></p>
+    <p>Por contratar</p>
+    <p>Pr despedir</p>
+    <p>Por mano de obra</p>
+    <p>Por almacenar</p>
+    <p>Por faltantes</p>
+    <p>Costos totales</p>
+
+   </div>
+
+   <div class="col2">
+   	<p><input type="text" id="M1" placeholder="mes 1"></p>
+   	<p>	<input type="number" id="D1" readonly></p>
+   	<p><input type="number" id="DE1" readonly></p>
+   	<p><input type="number" id="U1" readonly></p>
+   	<p><input type="number" id="OR1" readonly></p>
+   	<p><input type="number" id="OD1" readonly> </p>
+   	<p><input type="number" id="CON1" readonly></p>
+   	<p><input type="number" id="DES1" readonly></p>
+   	<p><input type="number" id="UO1" readonly></p>
+   	<p><input type="number" id="UP1" readonly></p>
+   	<p><input type="number" id="UD1" readonly></p>
+   	<p><input type="number" id="I1" readonly></p>
+   	<p><input type="number" id="UF1" readonly></p>
+
+   	<p>.........</p>
+   	<p><input type="number" id="contratar1" readonly></p>
+   	<p><input type="number" id="despedir1" readonly></p>
+   	<p><input type="number" id="mano1" readonly></p>
+   	<p><input type="number" id="alamcenar1" readonly></p>
+   	<p><input type="number" id="faltante1" readonly></p>
+   	<p><input type="number" id="total1" readonly></p>
+   </div>
+
+   <div class ="col3">
+      	<p><input type="text" id="M2" placeholder="mes 2"></p>
+   	<p>	<input type="number" id="D2" readonly></p>
+   	<p><input type="number" id="DE2" readonly></p>
+   	<p><input type="number" id="U2" readonly></p>
+   	<p><input type="number" id="OR2" readonly></p>
+   	<p><input type="number" id="OD2" readonly> </p>
+   	<p><input type="number" id="CON2" readonly></p>
+   	<p><input type="number" id="DES2" readonly></p>
+   	<p><input type="number" id="UO2" readonly></p>
+   	<p><input type="number" id="UP2" readonly></p>
+   	<p><input type="number" id="UD2" readonly></p>
+   	<p><input type="number" id="I2" readonly></p>
+   	<p><input type="number" id="UF2" readonly></p>	
+
+   	 	<p>.........</p>
+   	 <p><input type="number" id="contratar2" readonly></p>
+   	<p><input type="number" id="despedir2" readonly></p>
+   	<p><input type="number" id="mano2" readonly></p>
+   	<p><input type="number" id="alamcenar2" readonly></p>
+   	<p><input type="number" id="faltante2" readonly></p>
+   	<p><input type="number" id="total2" readonly></p>
+   </div>
+	
+   <div class ="col4">
+      	<p><input type="text" id="M3" placeholder="mes 3"></p>
+   	<p>	<input type="number" id="D3" readonly></p>
+   	<p><input type="number" id="DE3" readonly></p>
+   	<p><input type="number" id="U3" readonly></p>
+   	<p><input type="number" id="OR3" readonly></p>
+   	<p><input type="number" id="OD3" readonly> </p>
+   	<p><input type="number" id="CON3" readonly></p>
+   	<p><input type="number" id="DES3" readonly></p>
+   	<p><input type="number" id="UO3" readonly></p>
+   	<p><input type="number" id="UP3" readonly></p>
+   	<p><input type="number" id="UD3" readonly></p>
+   	<p><input type="number" id="I3" readonly></p>
+   	<p><input type="number" id="UF3" readonly></p>
+
+   	 	<p>.........</p>
+   	 	<p><input type="number" id="contratar3" readonly></p>
+   	<p><input type="number" id="despedir3" readonly></p>
+   	<p><input type="number" id="mano3" readonly></p>
+   	<p><input type="number" id="alamcenar3" readonly></p>
+   	<p><input type="number" id="faltante3" readonly></p>
+   	<p><input type="number" id="total3" readonly></p>	
+   </div>
+     <div class ="col5">
+      	<p><input type="text" id="M4" placeholder="mes 4"></p>
+   	<p>	<input type="number" id="D4" readonly></p>
+   	<p><input type="number" id="DE4" readonly></p>
+   	<p><input type="number" id="U4" readonly></p>
+   	<p><input type="number" id="OR4" readonly></p>
+   	<p><input type="number" id="OD4" readonly> </p>
+   	<p><input type="number" id="CON4" readonly></p>
+   	<p><input type="number" id="DES4" readonly></p>
+   	<p><input type="number" id="UO4" readonly></p>
+   	<p><input type="number" id="UP4" readonly></p>
+   	<p><input type="number" id="UD4" readonly></p>
+   	<p><input type="number" id="I4" readonly></p>
+   	<p><input type="number" id="UF4" readonly></p>	
+
+   	 	<p>.........</p>
+   	 	<p><input type="number" id="contratar4" readonly></p>
+   	<p><input type="number" id="despedir4" readonly></p>
+   	<p><input type="number" id="mano4" readonly></p>
+   	<p><input type="number" id="alamcenar4" readonly></p>
+   	<p><input type="number" id="faltante4" readonly></p>
+   	<p><input type="number" id="total4" readonly></p>
+   </div>
+     <div class ="col6">
+      	<p><input type="text" id="M5" placeholder="mes 5"></p>
+   	<p>	<input type="number" id="D5" readonly></p>
+   	<p><input type="number" id="DE5" readonly></p>
+   	<p><input type="number" id="U5" readonly></p>
+   	<p><input type="number" id="OR5" readonly></p>
+   	<p><input type="number" id="OD5" readonly> </p>
+   	<p><input type="number" id="CON5" readonly></p>
+   	<p><input type="number" id="DES5" readonly></p>
+   	<p><input type="number" id="UO5" readonly></p>
+   	<p><input type="number" id="UP5" readonly></p>
+   	<p><input type="number" id="UD5" readonly></p>
+   	<p><input type="number" id="I5" readonly></p>
+   	<p><input type="number" id="UF5" readonly></p>	
+
+   	 	<p>.........</p>
+   	 	<p><input type="number" id="contratar5" readonly></p>
+   	<p><input type="number" id="despedir5" readonly></p>
+   	<p><input type="number" id="mano5" readonly></p>
+   	<p><input type="number" id="alamcenar5" readonly></p>
+   	<p><input type="number" id="faltante5" readonly></p>
+   	<p><input type="number" id="total5" readonly></p>
+   </div>
+     <div class ="col7">
+      	<p><input type="text" id="M6" placeholder="mes 6"></p>
+   	<p>	<input type="number" id="D6" readonly></p>
+   	<p><input type="number" id="DE6" readonly></p>
+   	<p><input type="number" id="U6" readonly></p>
+   	<p><input type="number" id="OR6" readonly></p>
+   	<p><input type="number" id="OD6" readonly> </p>
+   	<p><input type="number" id="CON6" readonly></p>
+   	<p><input type="number" id="DES6" readonly></p>
+   	<p><input type="number" id="UO6" readonly></p>
+   	<p><input type="number" id="UP6" readonly></p>
+   	<p><input type="number" id="UD6" readonly></p>
+   	<p><input type="number" id="I6" readonly></p>
+   	<p><input type="number" id="UF6" readonly></p>	
+
+   	 	<p>.........</p>
+   	 	<p><input type="number" id="contratar6" readonly></p>
+   	<p><input type="number" id="despedir6" readonly></p>
+   	<p><input type="number" id="mano6" readonly></p>
+   	<p><input type="number" id="alamcenar6" readonly></p>
+   	<p><input type="number" id="faltante6" readonly></p>
+   	<p><input type="number" id="total6" readonly></p>
+   </div>
+     <div class ="col8">
+      	<p>Total</p>
+   	<p>	<input type="number" id="D7" readonly></p>
+   	<p><input type="number" id="DE7" readonly></p>
+   	<p><input type="number" id="U7" readonly></p>
+   	<p><input type="number" id="OR7" readonly></p>
+   	<p><input type="number" id="OD7" readonly> </p>
+   	<p><input type="number" id="CON7" readonly></p>
+   	<p><input type="number" id="DES7" readonly></p>
+   	<p><input type="number" id="UO7" readonly></p>
+   	<p><input type="number" id="UP7" readonly></p>
+   	<p><input type="number" id="UD7" readonly></p>
+   	<p><input type="number" id="I7" readonly></p>
+   	<p><input type="number" id="UF7" readonly></p>
+
+   	 	<p>.........</p>	
+   	 	<p><input type="number" id="contratar7" readonly></p>
+   	<p><input type="number" id="despedir7" readonly></p>
+   	<p><input type="number" id="mano7" readonly></p>
+   	<p><input type="number" id="alamcenar7" readonly></p>
+   	<p><input type="number" id="faltante7" readonly></p>
+   	<p><input type="number" id="total7" readonly></p>
+   </div>
+
+	
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+.Contenedor1,.calculadora{
+display: flex;
+justify-content: left;
+}
+
+.columna1{
+margin: 0 40px;
+
+padding:10px;
+}
+
+.columna2,.columna3,.col1,.col2,.col3,.col4,.col5,.col6,.col7,.col8{
+
+width: 10%;
+padding: 8px;
+}
+
+.col1{
+	margin-bottom: 10%;
+}
+input{
+	width: 70%;
+}
+
+
+.tx1{
+	margin-bottom: 25px;
+}
+.tx2,.tx3,.tx4,.tx5,.tx6,.tx7,.tx8,.tx9,.tx10,.tx11,.tx12,.tx13{
+	margin-bottom: 19px;
+}
+
+.texto{
+margin-bottom: 18px;
+
+}
+.U{
+	width: 40%;
+}
+.cerrar{
+	text-align: right;
+}
