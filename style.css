@@ -1,8 +1,19 @@
 .Contenedor1,.calculadora{
 display: flex;
 justify-content: left;
-}
 
+}
+body{
+	background-color: lightblue;
+	border-radius: 10px;
+	border:none;
+}
+.line{
+	  text-decoration: underline;
+  text-decoration-color: blue;
+  font-family: Courier;
+  margin-top: 10px;
+}
 .columna1{
 margin: 0 40px;
 
@@ -14,7 +25,13 @@ padding:10px;
 width: 10%;
 padding: 8px;
 }
+.texto3{
+	border: 1px black solid;
+  	background-color: blue;
+  	height: 4.6%;
+  	font-family: Courier;
 
+}
 .col1{
 	margin-bottom: 10%;
 }
@@ -31,14 +48,23 @@ input{
 }
 
 .texto{
-margin-bottom: 18px;
-
+margin-bottom: 16px;
 }
+
 .U{
-	width: 40%;
+	width: 50%;
+	padding :2%;
+}
+.un{
+padding:0.4%;
 }
 .cerrar{
 	text-align: right;
+	background-color: #4CAF50;
+		color: white;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
 }
 
 .styletexto{
@@ -90,14 +116,33 @@ margin-bottom: 18px;
 
 .table th[scope="row"] {
 	width: 15%;
-}
+	background-color: #4CAF50;
 
+}
+.table th[scope="col"]{
+	background-color: #4CAF50;
+}
 .boton {
-	padding: 10px 20px;
+	padding: 13px 24px;
 	background-color: #4CAF50; /* Cambia el color aquí */
 	color: white;
 	border: none;
 	border-radius: 10px;
 	cursor: pointer;
+	margin-bottom: 40px;
+
+  }
+
+  .texto{
+  	border: 1px black solid;
+  	background-color: blue;
+  	height: 5%;
+  	padding: 1.2px;
+  	font-family: Courier;
 	
+  }
+  .texto1{
+  	padding:2.2%;
+  	font-family: Courier;
+
   }

@@ -4,6 +4,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: lightblue;
 }
 h1{
     margin-bottom: 2rem;

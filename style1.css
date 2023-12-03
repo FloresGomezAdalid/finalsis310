@@ -3,6 +3,7 @@ body, html{
   margin: 0;
   display: flex;
   justify-content: center;
+  background-color: lightblue;
 }
 .contenedor {
     position: relative;
@@ -26,6 +27,9 @@ p {
 .enlace{
   text-decoration: underline;
   text-decoration-color: blue;
+  font-family: Courier;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .contenido {
