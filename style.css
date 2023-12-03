@@ -40,3 +40,64 @@ margin-bottom: 18px;
 .cerrar{
 	text-align: right;
 }
+
+.styletexto{
+	margin-left: 10px;
+	padding-top: 1%;
+	font-family: Courier;
+	font-size: 30px;
+	font-weight: bold;
+	position: relative;
+	border: 2px solid #000; /* Grosor y tipo de borde */
+	border-radius: 15px; /* Radio de las esquinas redondeadas */
+	padding: 10px; /* Espaciado dentro del borde */
+  	width: 500px; /* Ancho del contenedor */
+	text-align: center; /* Centrar el texto */
+	margin: 0 auto; /* Centrar el contenedor */
+	background-clip: padding-box; /* Colorear el interior del borde */
+	background-color:rgb(58, 58, 211); /* Color del fondo del borde */
+}
+
+.enlace {
+	margin-left: 10px;
+	padding-top: 1%;
+	font-family: Courier;
+	font-size: 30px;
+	font-weight: bold;
+	position: relative;
+	border: 2px solid #000; /* Grosor y tipo de borde */
+	border-radius: 15px; /* Radio de las esquinas redondeadas */
+	padding: 10px; /* Espaciado dentro del borde */
+  	width: 700px; /* Ancho del contenedor */
+	text-align: center; /* Centrar el texto */
+	margin: 0 auto; /* Centrar el contenedor */
+	background-clip: padding-box; /* Colorear el interior del borde */
+	background-color:rgb(58, 58, 211); /* Color del fondo del borde */
+	margin-top: 20px;
+}
+.table{
+	border-collapse: collapse; /* Colapsar bordes */
+  	width: 100%; /* Ancho de la tabla */
+	margin-top: 20px;
+}
+
+.table th, .table td {
+	border: 1px solid #000; /* Grosor y color del borde */
+	text-align: center; /* Alineación del texto */
+	padding: 4px; /* Espaciado interno de celdas */
+	
+}
+
+.table th[scope="row"] {
+	width: 15%;
+}
+
+.boton {
+	padding: 10px 20px;
+	background-color: #4CAF50; /* Cambia el color aquí */
+	color: white;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	
+  }

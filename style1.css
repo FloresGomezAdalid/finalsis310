@@ -1,0 +1,79 @@
+body, html{
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.contenedor {
+    position: relative;
+    text-align: center;
+}
+  
+img {
+  width: 200px; /* Ajusta el ancho de la imagen según sea necesario */
+  height: auto; /* Permite mantener la proporción de la imagen */
+  float: left; /* Hace que la imagen flote a la izquierda */
+}
+  
+p {
+  margin-left: 10px;
+  padding-top: 1%;
+  font-family: Courier;
+  font-size: 30px;
+  font-weight: bold;
+}
+  
+.enlace{
+  text-decoration: underline;
+  text-decoration-color: blue;
+}
+
+.contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+
+.input {
+  padding: 8px;
+  width: 200px;
+  border-radius: 10px; /* Esquinas redondeadas */
+  border: 1px solid #ccc; /* Borde del campo de entrada */
+  
+}
+
+
+.boton {
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Cambia el color aquí */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  
+}
+
+.boton-registro {
+  padding: 10px 20px;
+  background-color: #008CBA; /* Cambia el color aquí */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
